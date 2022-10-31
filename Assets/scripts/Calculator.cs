@@ -39,7 +39,10 @@ public class Calculator : MonoBehaviour {
 				case "/":
 				case "*":
 				case "=":
-				Calculate(s);
+                case "^":
+                case "√":
+
+                Calculate(s);
 				break;
 			case "ce":
 				ClearLastInput();
@@ -105,7 +108,10 @@ public class Calculator : MonoBehaviour {
 			case "/":
 				result = x / y;
 				break;
-		}
+            case "^":
+                result = Mathf.Pow(x, y);
+                break;
+        }
 
 		return result;
 	}
