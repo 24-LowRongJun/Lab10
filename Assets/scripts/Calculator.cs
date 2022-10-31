@@ -111,6 +111,9 @@ public class Calculator : MonoBehaviour {
             case "^":
                 result = Mathf.Pow(x, y);
                 break;
+            case "√":
+                result = Mathf.Sqrt(y);
+                break;
         }
 
 		return result;
